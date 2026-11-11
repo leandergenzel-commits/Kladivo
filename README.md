@@ -2,7 +2,7 @@
 
 Neue Website der Bau- & Möbeltischlerei H.-J. Kladivo in Rathenow (bisher `tischlerei-kladivo.de`).
 
-Reines HTML und CSS, kein Build-Schritt. Gestaltet nach den Regeln des Design-Skills [Hallmark](https://github.com/Nutlope/hallmark), Theme „Formwork“ (Betongrau, ein Signal-Orange passend zum Logo).
+Reines HTML und CSS, kein Build-Schritt. Gestaltet nach den Regeln des Design-Skills [Hallmark](https://github.com/Nutlope/hallmark), eigene helle Farbwelt (warmes Weiß, Logo-Orange, Logo-Grau als Schriftfarbe), aufgebaut auf dem Hallmark-Theme „Formwork“.
 
 ## Dateien
 

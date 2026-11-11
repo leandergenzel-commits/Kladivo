@@ -16,18 +16,19 @@
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
 
-  /* Formwork, Guss „cast“ */
-  --color-paper: oklch(74% 0.008 80); --color-paper-2: oklch(69% 0.009 80); --color-paper-3: oklch(64% 0.01 80);
-  --color-plate: oklch(82% 0.007 80); --color-plate-ink: oklch(95% 0.006 80);
-  --color-ink: oklch(18% 0.005 270); --color-ink-2: oklch(28% 0.006 80); --color-muted: oklch(31.5% 0.008 80);
-  --color-rule: oklch(64% 0.01 80);
-  --color-accent: oklch(66% 0.21 38); --color-accent-ink: oklch(18% 0.005 270); --color-focus: oklch(42% 0.15 38);
-  --color-accent-deep: oklch(48% 0.17 38);
-  --texture-opacity: 0.05;
+  /* Eigene Farbwelt „Werkstatt hell“: warmes Weiß, Logo-Orange, Logo-Grau als Tinte */
+  --color-paper: oklch(98.5% 0.006 75); --color-paper-2: oklch(95.5% 0.014 70); --color-paper-3: oklch(90% 0.016 70);
+  --color-plate: oklch(99.5% 0.003 75); --color-plate-ink: oklch(98.5% 0.006 75);
+  --color-ink: oklch(25% 0.008 230); --color-ink-2: oklch(36% 0.008 230); --color-muted: oklch(46% 0.008 230);
+  --color-rule: oklch(86% 0.012 70);
+  --color-accent: oklch(73% 0.17 45); --color-accent-ink: oklch(25% 0.008 230); --color-focus: oklch(55% 0.17 45);
+  --color-accent-deep: oklch(60% 0.17 45); --color-accent-soft: oklch(94% 0.035 68);
+  --color-field: oklch(73% 0.17 45); --color-field-ink: oklch(22% 0.008 230);
+  --texture-opacity: 0;
   --font-display: "Oswald", ui-sans-serif, sans-serif; --font-body: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-outlier: "Archivo Narrow", ui-sans-serif, sans-serif;
   --radius-card: 0; --radius-pill: 0; --rule-hair: 1px; --rule-bar: 3px;
-  --shadow-card: 6px 6px 0 var(--color-ink);
+  --shadow-card: 8px 8px 0 var(--color-accent);
   --tracking-display: -0.005em; --display-weight: 700;
   --nav-h: 88px;
 }
