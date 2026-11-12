@@ -218,5 +218,41 @@ html { scroll-padding-top: var(--nav-h); }
   .footer img { width: 88px; }
 }
 
+/* Handy kompakt: jede Sektion soll auf einen Bildschirm passen (iPhone 15/16, Plus, Pro Max, gängige Android) */
+@media (max-width: 40rem) {
+  :root { --panel-pad: var(--space-lg); --head-gap: var(--space-md); }
+  .head { padding-top: var(--space-sm); }
+  .head .lead, .visit__text .lead, .contact__text .lead { font-size: var(--text-md); line-height: 1.45; }
+  .rows li { padding-block: var(--space-sm); gap: var(--space-2xs); }
+  .rows li:first-child { padding-top: 0; }
+  .rows h3 { font-size: var(--text-lg); }
+  .statement { gap: var(--space-lg); }
+  .visit { gap: var(--space-lg); }
+  .visit__text { gap: var(--space-sm); }
+  .visit__text address { display: none; }
+  .map { aspect-ratio: auto; }
+  .map__rest { gap: var(--space-sm); }
+  .map__street { font-size: var(--text-3xl); }
+  .partner { position: relative; padding: var(--space-sm); gap: var(--space-3xs); }
+  .partner__logo { height: 44px; margin-bottom: var(--space-2xs); }
+  .partner__logo img { max-height: 40px; }
+  .partner h3 { font-size: var(--text-md); }
+  .partner p { font-size: var(--text-sm); line-height: 1.4; }
+  .partner a { position: static; font-size: 0; margin: 0; }
+  .partner a::after { content: ""; position: absolute; inset: 0; }
+  .partner:has(a:focus-visible) { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+  .contact { gap: var(--space-lg); }
+  .contact__text { gap: var(--space-sm); }
+  .contact__mail { display: none; }
+  .contacts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md) var(--space-lg); padding: var(--space-lg); }
+  .contacts dd { font-size: var(--text-lg); }
+  .contacts .wide { padding-top: var(--space-md); }
+}
+
+@media (max-width: 40rem) and (max-height: 45rem), (max-width: 24rem) {
+  .partner p { display: none; }
+  .partner__logo { height: 40px; }
+}
+
 /* Niedrige Bildschirme (Laptop, Handy quer): Sektionen nicht künstlich strecken */
 @media (max-height: 34rem) { .panel { min-height: 0; } }
