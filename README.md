@@ -10,7 +10,7 @@ Reines HTML und CSS, kein Build-Schritt. Gestaltet nach den Regeln des Design-Sk
 - `impressum.html`, `datenschutz.html`: Rechtstexte
 - `assets/css/`: `tokens.css` (Farben, Schriften, Abstände), `base.css` (Grundregeln), `site.css` (Seitenlayout)
 - `assets/fonts/`: Oswald, Archivo und Archivo Narrow als lokale Dateien (SIL Open Font License), damit nichts von Google geladen wird
-- `assets/img/`: Logo (freigestellt aus dem bisherigen Logo) und Favicon
+- `assets/img/`: Logo (freigestellt aus dem bisherigen Logo), Favicon, Partnerlogos und das Parkettfoto im Startbereich (KI-generiert, als JPG und WebP in zwei Größen)
 
 ## Ansehen
 
