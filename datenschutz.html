@@ -19,12 +19,15 @@
       <span class="brand__name">Tischlerei Kladivo<small>Bau- & Möbeltischlerei in Rathenow</small></span>
     </a>
     <nav aria-label="Hauptnavigation">
-      <ul class="nav__links">
+      <details class="menu" open>
+        <summary>Menü</summary>
+        <ul class="nav__links">
         <li><a href="./#leistungen">Leistungen</a></li>
         <li><a href="./#anfahrt">Anfahrt</a></li>
         <li><a href="./#partner">Partner</a></li>
         <li><a href="./#kontakt">Kontakt</a></li>
       </ul>
+      </details>
     </nav>
   </div>
 </header>
@@ -64,5 +67,15 @@
     </ul>
   </div>
 </footer>
+<script>
+  (function () {
+    var m = document.querySelector('.menu');
+    if (!m) return;
+    var mq = window.matchMedia('(max-width: 60rem)');
+    function sync() { m.open = !mq.matches; }
+    sync(); mq.addEventListener('change', sync);
+    m.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { if (mq.matches) m.open = false; }); });
+  })();
+</script>
 </body>
 </html>

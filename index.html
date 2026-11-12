@@ -19,19 +19,22 @@
       <span class="brand__name">Tischlerei Kladivo<small>Bau- & Möbeltischlerei in Rathenow</small></span>
     </a>
     <nav aria-label="Hauptnavigation">
-      <ul class="nav__links">
+      <details class="menu" open>
+        <summary>Menü</summary>
+        <ul class="nav__links">
         <li><a href="#leistungen">Leistungen</a></li>
         <li><a href="#anfahrt">Anfahrt</a></li>
         <li><a href="#partner">Partner</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
+      </details>
     </nav>
   </div>
 </header>
 
 <main id="inhalt">
 
-  <section class="hero" aria-labelledby="hero-titel">
+  <section class="hero panel" aria-labelledby="hero-titel">
     <div class="container hero__inner">
       <div class="hero__text">
         <h1 id="hero-titel">Werte schaffen.<br>Werte erhalten.</h1>
@@ -52,7 +55,7 @@
     </div>
   </section>
 
-  <section class="section" id="leistungen" aria-labelledby="leistungen-titel">
+  <section class="panel panel--tint" id="leistungen" aria-labelledby="leistungen-titel">
     <div class="container">
       <div class="head">
         <h2 id="leistungen-titel">Vier Gewerke, eine Werkstatt</h2>
@@ -79,7 +82,7 @@
     </div>
   </section>
 
-  <section class="band--ink" aria-label="Unser Handwerk">
+  <section class="panel panel--field" aria-label="Unser Handwerk">
     <div class="container statement">
       <blockquote>
         <p>Die Maschine ist Hilfsmittel. Das Werkzeug führt der Mensch.</p>
@@ -88,7 +91,7 @@
     </div>
   </section>
 
-  <section class="section" id="anfahrt" aria-labelledby="anfahrt-titel">
+  <section class="panel" id="anfahrt" aria-labelledby="anfahrt-titel">
     <div class="container visit">
       <div class="visit__text">
         <h2 id="anfahrt-titel">Ein offenes Tor, ein offenes Ohr</h2>
@@ -109,35 +112,63 @@
     </div>
   </section>
 
-  <section class="section" id="partner" aria-labelledby="partner-titel">
+  <section class="panel panel--tint" id="partner" aria-labelledby="partner-titel">
     <div class="container">
       <div class="head">
         <h2 id="partner-titel">Gutes Material, gute Partner</h2>
         <p class="lead">Was wir nicht selbst herstellen, setzen wir mit erfahrenen Partnern um.</p>
       </div>
-      <table class="table">
-        <thead>
-          <tr><th scope="col">Partner</th><th scope="col">Wofür</th><th scope="col"><span class="visually-hidden">Website</span></th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Würth</td><td>Werkzeug, Befestigungstechnik und vieles mehr</td><td><a href="https://www.wuerth.de" rel="noopener">wuerth.de</a></td></tr>
-          <tr><td>ELG Holz Rathenow</td><td>Holz und Zubehör, direkt aus Rathenow</td><td><a href="https://www.elgholzrathenow.de" rel="noopener">elgholzrathenow.de</a></td></tr>
-          <tr><td>Aries</td><td>Fenster und Türen</td><td><a href="https://www.ariesfenster.de" rel="noopener">ariesfenster.de</a></td></tr>
-          <tr><td>Rekord</td><td>Fenster und Türen aus Holz und Aluminium</td><td><a href="https://www.rekordservice.de" rel="noopener">rekordservice.de</a></td></tr>
-          <tr><td>Haro</td><td>Sportböden</td><td><a href="https://haro-sports.com/de/" rel="noopener">haro-sports.com</a></td></tr>
-          <tr><td>Bona</td><td>Oberflächenbehandlung von Holzböden</td><td><a href="https://www.bona.com/de/Deutschland/" rel="noopener">bona.com</a></td></tr>
-        </tbody>
-      </table>
+      <ul class="partners">
+        <li class="partner">
+          <div class="partner__logo"><img src="assets/img/partner/wuerth.png" width="240" height="51" alt="Logo Würth"></div>
+          <h3>Würth</h3>
+          <p>Werkzeug, Befestigungstechnik und vieles mehr.</p>
+          <a href="https://www.wuerth.de" rel="noopener">wuerth.de</a>
+        </li>
+        <li class="partner">
+          <div class="partner__logo"><img src="assets/img/partner/elg-gd-holz.png" width="195" height="108" alt="Logo ELG Holz Rathenow"></div>
+          <h3>ELG Holz Rathenow</h3>
+          <p>Holz und Zubehör, direkt aus Rathenow.</p>
+          <a href="https://www.elgholzrathenow.de" rel="noopener">elgholzrathenow.de</a>
+        </li>
+        <li class="partner">
+          <div class="partner__logo"><img src="assets/img/partner/aries.png" width="182" height="79" alt="Logo Aries"></div>
+          <h3>Aries</h3>
+          <p>Fenster und Türen.</p>
+          <a href="https://www.ariesfenster.de" rel="noopener">ariesfenster.de</a>
+        </li>
+        <li class="partner">
+          <div class="partner__logo"><img src="assets/img/partner/rekord.png" width="226" height="61" alt="Logo Rekord"></div>
+          <h3>Rekord</h3>
+          <p>Fenster und Türen aus Holz und Aluminium.</p>
+          <a href="https://www.rekordservice.de" rel="noopener">rekordservice.de</a>
+        </li>
+        <li class="partner">
+          <div class="partner__logo"><img src="assets/img/partner/haro.png" width="142" height="65" alt="Logo Haro"></div>
+          <h3>Haro</h3>
+          <p>Sportböden.</p>
+          <a href="https://haro-sports.com/de/" rel="noopener">haro-sports.com</a>
+        </li>
+        <li class="partner">
+          <div class="partner__logo"><img src="assets/img/partner/bona.png" width="136" height="43" alt="Logo Bona"></div>
+          <h3>Bona</h3>
+          <p>Oberflächenbehandlung von Holzböden.</p>
+          <a href="https://www.bona.com/de/Deutschland/" rel="noopener">bona.com</a>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <section class="band--cast" id="kontakt" aria-labelledby="kontakt-titel">
-    <div class="container">
-      <div class="head">
+  <section class="panel" id="kontakt" aria-labelledby="kontakt-titel">
+    <div class="container contact">
+      <div class="contact__text">
         <h2 id="kontakt-titel">Rufen Sie an oder schreiben Sie</h2>
-        <p class="lead">Telefonisch sind wir jederzeit für Sie erreichbar.</p>
+        <p class="lead">Telefonisch sind wir jederzeit für Sie erreichbar. Gern auch per E-Mail, wir melden uns zurück.</p>
+        <div class="actions">
+          <a class="btn btn--secondary" href="mailto:tischlerei-kladivo@t-online.de">E-Mail schreiben</a>
+        </div>
       </div>
-      <dl class="contacts">
+      <dl class="plate contacts">
         <div>
           <dt>Telefon</dt>
           <dd><a href="tel:+493385512464">(03385) 51 24 64</a></dd>
@@ -151,7 +182,7 @@
           <dt>Telefax</dt>
           <dd>(03385) 51 57 16</dd>
         </div>
-        <div>
+        <div class="wide">
           <dt>E-Mail</dt>
           <dd><a href="mailto:tischlerei-kladivo@t-online.de">tischlerei-kladivo@t-online.de</a></dd>
         </div>
@@ -186,6 +217,16 @@
       box.appendChild(f);
       box.querySelector('.map__rest').hidden = true;
     });
+  })();
+</script>
+<script>
+  (function () {
+    var m = document.querySelector('.menu');
+    if (!m) return;
+    var mq = window.matchMedia('(max-width: 60rem)');
+    function sync() { m.open = !mq.matches; }
+    sync(); mq.addEventListener('change', sync);
+    m.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { if (mq.matches) m.open = false; }); });
   })();
 </script>
 </body>
